@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Create With Us</h1>
+    <p id="description">See if you qualify for go-to-market product revenue sharing</p>
+    <form method="post" id="survey-form" action="[**MISSING**LINK**]">
+
+      <fieldset>
+        <label id="name-label">Name:
+          <input id="name" type="text" required placeholder="Ex: First Last"/>
+        </label>
+
+        <label id="email-label">Email: 
+          <input id="email" type="email" required placeholder="Ex: chris@zialectics.com" />
+        </label>
+
+        <!-- Remove the below Zip Code section prior to prod --> 
+        <label id="number-label">Zip Code:
+          <input id="number" type="number" required placeholder="Ex: 12345 (US Only)" min="00000" max="99999"/>
+        </label>
+        <!-- end of section to be removed -->
+      </fieldset>
+
+      <fieldset>
+        <legend id="business-ownership">Are you a business owner?</legend>
+        <label>
+          <input id="is-business-owner" type="radio" name="business-owner" class="inline" value="1"/> Yes
+        </label>
+        <label>
+          <input id="not-business-owner" type="radio" name="business-owner" class="inline" value="2"/> No
+        </label>
+      </fieldset>
+
+      <fieldset id="objectives">
+        <legend id="objectives">I want to (select all that apply):</legend>
+
+        <label id="consult">
+          <input id="consult" type="checkbox" name="objectives" class="inline" value="1"/> Schedule a free consult
+        </label>
+        
+        <label id="growth">
+          <input id="growth" type="checkbox" name="objectives" class="inline" value="2"/> Grow my business
+        </label>
+
+        <label id="product-dev">
+          <input id="product-dev" type="checkbox" name="objectives" class="inline" value="3"/> Explore new-product development
+        </label>
+
+        <label id="ai">
+          <input id="ai" type="checkbox" name="objectives" class="inline" value="4"/> Use AI (Artificial Intelligence) like a boss
+        </label> 
+
+        <label id="unknown">
+          <input id="unknown" type="checkbox" name="objectives" class="inline" value="5"/> Not sure yet (Other)
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">My Industry: 
+          <select id="dropdown" name="industry">
+            <option value="">(select one)</option>
+            <option value="1">Agriculture</option>
+            <option value="2">Consumer Services</option>
+            <option value="3">Retail</option>
+            <option value="4">Other</option>
+            <!-- TO DO: Add more Industries --> 
+          </select>
+        </label>
+        
+        <label for="free-form"> What's on your mind?:
+          <textarea id="free-form" name="free-form" rows="5" cols="30" placeholder="How can we help?"></textarea>
+        </label>
+      </fieldset>
+
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
